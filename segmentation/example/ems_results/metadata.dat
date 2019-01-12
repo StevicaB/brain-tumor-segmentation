@@ -1,0 +1,18 @@
+// 
+// ****** Input Data ****** 
+mask_file: /home/stevica/Desktop/segmentation_pipeline/example/brain_mask.nii.gz 
+data_files: ['/home/stevica/Desktop/segmentation_pipeline/example/flair.nii.gz', '/home/stevica/Desktop/segmentation_pipeline/example/t1.nii.gz', '/home/stevica/Desktop/segmentation_pipeline/example/t1c.nii.gz', '/home/stevica/Desktop/segmentation_pipeline/example/t2.nii.gz'] 
+modalities: ['flair', 't1', 't1c', 't2'] 
+labels: ['edema', 'enhanced', 'necrotic', 'nonactive', 'gm', 'wm', 'csf'] 
+atlas_input: ['array given', 'array given', 'array given', 'array given', 'array given', 'array given', 'array given'] 
+// ****** Tumor Box ****** 
+tumor_lower_co: [0 0 0] 
+tumor_upper_co: [154 239 239] 
+// ****** Parameters ****** 
+max_iteration: 15 
+seed: 1401 
+sub_sample: 1 
+// ****** Intensity parameters ****** 
+max_iteration: 15 
+seed: 1401 
+sub_sample: 1 
